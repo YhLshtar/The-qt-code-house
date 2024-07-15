@@ -1,1 +1,2 @@
-# The-qt-code-house
+My Code House
+Version 1.0
