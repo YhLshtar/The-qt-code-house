@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraPreview1</class>
+ <widget class="QWidget" name="CameraPreview1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton1">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="pushButton2">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="Captrue">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>存图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="PreviewStatus">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>暂停</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="Quit">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page1">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page2">
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>161</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="Resolution">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>低分辨率</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0" colspan="4">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Gain</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Exposure</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEdit1">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>2</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEdit4">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" colspan="4">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>ROI X</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>ROI Y</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEdit2">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEdit3">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0" colspan="4">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Write">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>写入</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="2">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
